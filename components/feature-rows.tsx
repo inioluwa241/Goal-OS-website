@@ -1,22 +1,22 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { ArrowRight, Shield, Bell } from 'lucide-react'
-import { GrowthRings } from './growth-rings'
+import { motion } from "framer-motion";
+import { ArrowRight, Shield, Bell } from "lucide-react";
+import { GrowthRings } from "./growth-rings";
 
 const reveal = {
   initial: { opacity: 0, y: 10 },
   whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true, margin: '-80px' },
+  viewport: { once: true, margin: "-80px" },
   transition: { duration: 0.55, ease: [0.16, 1, 0.3, 1] as const },
-}
+};
 
 function GoalBreakdownMock() {
   const stages = [
-    { label: 'Foundation', item: 'Learn Python syntax', color: '#C08A3E' },
-    { label: 'Build', item: 'Ship a small CLI tool', color: '#3F6B4F' },
-    { label: 'Application', item: 'Automate a real task', color: '#1F3D2E' },
-  ]
+    { label: "Foundation", item: "Learn Python syntax", color: "#C08A3E" },
+    { label: "Build", item: "Ship a small CLI tool", color: "#3F6B4F" },
+    { label: "Application", item: "Automate a real task", color: "#1F3D2E" },
+  ];
   return (
     <div className="bg-[#FFFDF8] p-6 rounded-3xl border border-[#E2D9C4] space-y-4">
       <div className="flex items-center gap-2 pb-3 border-b border-[#E2D9C4]">
@@ -33,22 +33,22 @@ function GoalBreakdownMock() {
           />
           <div>
             <p className="font-mono text-[11px] uppercase tracking-wider text-[#A89A83]">
-              {String(i + 1).padStart(2, '0')} · {s.label}
+              {String(i + 1).padStart(2, "0")} · {s.label}
             </p>
             <p className="text-sm text-[#22281F]">{s.item}</p>
           </div>
         </div>
       ))}
     </div>
-  )
+  );
 }
 
 function SmartListMock() {
   const tasks = [
-    { text: 'Review chapter notes', streak: '2', protect: true },
-    { text: 'Draft intro paragraph', streak: '9', protect: false },
-    { text: 'Read 20 pages', streak: '31', protect: false },
-  ]
+    { text: "Review chapter notes", streak: "2", protect: true },
+    { text: "Draft intro paragraph", streak: "9", protect: false },
+    { text: "Read 20 pages", streak: "31", protect: false },
+  ];
   return (
     <div className="bg-[#FFFDF8] p-6 rounded-3xl border border-[#E2D9C4] space-y-3">
       <p className="text-[11px] font-semibold text-[#696159] uppercase tracking-wider">
@@ -75,7 +75,7 @@ function SmartListMock() {
         </div>
       ))}
     </div>
-  )
+  );
 }
 
 function LockScreenMock() {
@@ -99,29 +99,29 @@ function LockScreenMock() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 const ROWS = [
   {
-    title: 'AI breaks your goal down for you',
-    body: 'A vague ambition becomes a concrete path — Foundation, Build, Application. Each stage is small enough to actually start today.',
+    title: "The system breaks your goal down for you",
+    body: "A vague ambition becomes a concrete path — Foundation, Build, Application. Each stage is small enough to actually start today.",
     visual: <GoalBreakdownMock />,
     flip: false,
   },
   {
-    title: 'Every morning, one clear list',
-    body: 'No infinite backlog. Goal OS sorts your day and quietly prioritizes the habit closest to slipping, so momentum compounds instead of scattering.',
+    title: "Every morning, one clear list",
+    body: "No infinite backlog. Goal OS sorts your day and quietly prioritizes the habit closest to slipping, so momentum compounds instead of scattering.",
     visual: <SmartListMock />,
     flip: true,
   },
   {
-    title: 'Progress lives outside the app too',
-    body: 'A lock screen widget, gentle notifications, and iMessage check-ins keep your goal in view where life actually happens — not buried in another app you forget to open.',
+    title: "Progress lives outside the app too",
+    body: "A lock screen widget, gentle notifications, and iMessage check-ins keep your goal in view where life actually happens — not buried in another app you forget to open.",
     visual: <LockScreenMock />,
     flip: false,
   },
-]
+];
 
 export function FeatureRows() {
   return (
@@ -143,7 +143,7 @@ export function FeatureRows() {
               {...reveal}
               className="grid md:grid-cols-2 gap-10 md:gap-16 items-center"
             >
-              <div className={row.flip ? 'md:order-2' : ''}>
+              <div className={row.flip ? "md:order-2" : ""}>
                 <h3 className="font-serif text-3xl text-[#1F3D2E] mb-4 leading-snug">
                   {row.title}
                 </h3>
@@ -151,11 +151,11 @@ export function FeatureRows() {
                   {row.body}
                 </p>
               </div>
-              <div className={row.flip ? 'md:order-1' : ''}>{row.visual}</div>
+              <div className={row.flip ? "md:order-1" : ""}>{row.visual}</div>
             </motion.div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
