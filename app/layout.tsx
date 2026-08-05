@@ -3,9 +3,9 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Goal OS - Build Better Systems",
+  title: "Fojusun - Build Better Systems",
   description:
-    "Goal OS is an AI-powered companion that keeps your goals visible in everyday life and helps you build momentum toward what matters.",
+    "Fojusun is a companion that keeps your goals visible in everyday life and helps you build momentum toward what matters.",
   generator: "v0.app",
   icons: {
     icon: [

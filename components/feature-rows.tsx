@@ -90,7 +90,7 @@ function LockScreenMock() {
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-1.5 text-[10px] text-[#A89A83] mb-0.5">
             <Bell size={10} />
-            <span>Goal OS</span>
+            <span>Fojusun</span>
           </div>
           <p className="text-sm text-[#22281F] truncate">
             Next: Outline chapter 3
@@ -111,7 +111,7 @@ const ROWS = [
   },
   {
     title: "Every morning, one clear list",
-    body: "No infinite backlog. Goal OS sorts your day and quietly prioritizes the habit closest to slipping, so momentum compounds instead of scattering.",
+    body: "No infinite backlog. Fojusun sorts your day and quietly prioritizes the habit closest to slipping, so momentum compounds instead of scattering.",
     visual: <SmartListMock />,
     flip: true,
   },

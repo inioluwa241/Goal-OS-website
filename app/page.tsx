@@ -1,13 +1,13 @@
-'use client'
+"use client";
 
-import { GrowthRings } from '@/components/growth-rings'
-import { EmailInput } from '@/components/email-input'
-import { TheLoop } from '@/components/the-loop'
-import { StreakComparison } from '@/components/streak-comparison'
-import { PhoneMockup } from '@/components/phone-mockup'
-import { FeatureRows } from '@/components/feature-rows'
-import { Footer } from '@/components/footer'
-import { motion } from 'framer-motion'
+import { GrowthRings } from "@/components/growth-rings";
+import { EmailInput } from "@/components/email-input";
+import { TheLoop } from "@/components/the-loop";
+import { StreakComparison } from "@/components/streak-comparison";
+import { PhoneMockup } from "@/components/phone-mockup";
+import { FeatureRows } from "@/components/feature-rows";
+import { Footer } from "@/components/footer";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -32,12 +32,13 @@ export default function Home() {
           >
             <div>
               <span className="text-xs font-semibold tracking-widest uppercase text-[#C08A3E]">
-                Goal OS
+                Fojusun
               </span>
             </div>
 
             <h1 className="font-serif text-5xl lg:text-6xl leading-tight text-[#1F3D2E]">
-              You don&apos;t rise to the level of your goals — you fall to the level of your systems.
+              You don&apos;t rise to the level of your goals — you fall to the
+              level of your systems.
             </h1>
 
             <p className="text-lg text-[#696159] leading-relaxed">
@@ -77,11 +78,14 @@ export default function Home() {
             className="space-y-8"
           >
             <p className="font-serif text-5xl md:text-6xl leading-tight text-[#1F3D2E]">
-              &quot;The app isn&apos;t supposed to be like Duolingo. It should be a companion.&quot;
+              &quot;The app isn&apos;t supposed to be like Duolingo. It should
+              be a companion.&quot;
             </p>
 
             <p className="text-lg text-[#696159] leading-relaxed">
-              You do the work in real life. Goal OS is where you come back to acknowledge it — and where it remembers what you&apos;re building toward, even on the days you don&apos;t.
+              You do the work in real life. Fojusun is where you come back to
+              acknowledge it — and where it remembers what you&apos;re building
+              toward, even on the days you don&apos;t.
             </p>
           </motion.blockquote>
         </div>
@@ -110,5 +114,5 @@ export default function Home() {
       {/* Footer */}
       <Footer />
     </main>
-  )
+  );
 }
