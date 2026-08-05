@@ -78,8 +78,8 @@ export default function Home() {
             className="space-y-8"
           >
             <p className="font-serif text-5xl md:text-6xl leading-tight text-[#1F3D2E]">
-              &quot;The app isn&apos;t supposed to be like Duolingo. It should
-              be a companion.&quot;
+              &quot;The app isn&apos;t a streak app. It should be a
+              companion.&quot;
             </p>
 
             <p className="text-lg text-[#696159] leading-relaxed">
